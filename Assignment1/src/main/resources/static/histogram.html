@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Histogram Generator </title>
+        <link rel="stylesheet" href="histogram.css">
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        
+    </head>
+
+    <body id="mainBody">
+        <div class ="biggerContainer">
+          <h2 id="titleWords">Histogram Generator</h2>
+          <div class="containter">
+            
+              <div class="lowerBound" >
+                  <h4 id ="lb">Lower bounds</h4>
+                  <div class ="contents"> 
+                    <div class="labels">
+                      <label for= "words" id="label" > Max</label>
+                      <label for= "words" id="label"> A+</label>
+                      <label for= "words" id="label"> A</label>
+                      <label for= "words" id="label"> A-</label>
+                      <label for= "words" id="label"> B+</label>
+                      <label for= "words" id="label"> B</label>
+                      <label for= "words" id="label"> B-</label>
+                      <label for= "words" id="label"> C+</label>
+                      <label for= "words" id="label"> C</label>
+                      <label for= "words" id="label"> C-</label>
+                      <label for= "words" id="label"> D</label>
+                      <label for= "words" id="label"> F</label>
+                    </div>
+                    <div class="bounds">
+                      <input type="text" id="bounds-1"  value="100.00">
+                      <input type="text" id="bounds-2"  value="95.00">
+                      <input type="text" id="bounds-3"  value="90.00">
+                      <input type="text" id="bounds-4"  value="85.00">
+                      <input type="text" id="bounds-5"  value="80.00">
+                      <input type="text" id="bounds-6"  value="75.00">
+                      <input type="text" id="bounds-7"  value="70.00">
+                      <input type="text" id="bounds-8"  value="65.00">
+                      <input type="text" id="bounds-9"  value="60.00">
+                      <input type="text" id="bounds-10"  value="55.00">
+                      <input type="text" id="bounds-11"  value="50.00">
+                      <input type="text" id="bounds-12"  value="0.00">
+                    </div>
+
+                  </div>
+                      
+              </div>
+              <div class ="leftSide">
+                  <div id = "lb2">
+                    <h4 id ="lb">Histogram</h4>
+                    <canvas id="charts" > </canvas>
+                  </div>
+                  
+                  <div id="subcon">
+                      <div class="newGrade">
+                          <label for="words" id="newW"> New Grade:</label>
+                          <input type="text" id="newGradeBox" ">
+                      </div>
+                      <label for="words" id="errorMessage"> </label>
+  
+                  </div>
+              </div>
+            </div>
+        </div>
+        
+        <script src="calculate.js"></script>
+    </body>
+</html>
+
+

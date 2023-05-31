@@ -1,6 +1,7 @@
 #titleWords{
-    text-align: center;
+    text-align: left;
     font-size: 80%;
+    margin-bottom: 20px;
 }
 #mainBody{
     background-color: brown;
@@ -12,18 +13,17 @@
     display: flex;
     flex-direction: column;
      background-color: white;
-     margin-left: 30px;
-     margin-right: 30px;
-     margin-bottom: 10px;  
+     margin-bottom: 5px;  
+     align-items: left;
+     width: fit-content;
+
 }
 .containter {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     box-sizing: border-box;
-    position: center;
-
+    width: 40%;   
 }
 #lb{
     margin-top: 2px;
@@ -31,11 +31,13 @@
     margin-left: 2px;
     color: brown;
 }
+
 .lowerBound {
     display: flex;
     flex-direction: column;
     background-color:rgb(226, 233, 239);
-    height: auto;
+    width: 90px;
+
 
 }
 #textBox {
@@ -47,22 +49,8 @@
 
 }
 
-[id^="bounds-"]{
-    border: 0.5px solid black;
-    background-color: white;
-    width: 40px;
-    float: right;
-    margin-right: 50px;
 
- }
-/* 
- [id^="his-"] { 
-    font-size: 8px;
-    margin-left: 20px;
-    margin-bottom: 4px;
-    display: flex;
-    flex-direction: row; 
-} */
+
 .grades{
     display: flex;
     flex-direction: column;
@@ -75,9 +63,11 @@
 
     
 [id^="element-"]{
-    font-size: 8px;
+    font-size: 9px;
     margin-left: 20px;
-    margin-bottom: 8px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
 }
 
  .leftSide{
@@ -92,10 +82,8 @@
  }
  #charts{
     margin-bottom: 10px;
-
  }
  .newGrade{
-
     font-size: 10px;
     padding-top: 2px;
 }
@@ -107,23 +95,54 @@
     color: red;
     font-size: 5px;
     font: italic;
-
-
 }
 
 #newGradeBox{
     border: 0.5px solid black; 
     background-color: white;
     width: 90px;
+    height: 10px;
     float: right;
     margin-right: 90px;
-    margin-top: 2px;
-
+    margin-top: 3px;
+    margin-bottom: 40px;
+}
+.labels{
+    display: flex;
+    flex-direction: column;
+    font-size: 7px;
+    margin-bottom: 10px;
+    
+}
+.contents{
+    display: flex;
+    flex-direction: row;
+    width: 100px;
 }
 
-.bounds{
-    margin-left: 40px;
-}
 [id^="bounds-"]{
-    font-size: 8px;
+    border: 0.5px solid black;
+    background-color: white;
+    width: 25px;
+    float: right;
+    font-size: 7px;
+    margin-bottom: 8px;
+
+ }
+.bounds{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
 }
+#label{
+    margin-bottom: 11px;
+    font-size: 7px;
+    margin-left: 8px;
+}
+#newW{
+    font-size: 7px;
+    margin-left: 3px;
+}
+
+
+

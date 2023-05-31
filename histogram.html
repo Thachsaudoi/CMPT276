@@ -4,154 +4,87 @@
         <meta charset="utf-8"/>
         <title>Histogram Generator </title>
         <link rel="stylesheet" href="histogram.css">
-        <h2 id="titleWords">Histogram Generator</h2>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        
     </head>
 
     <body id="mainBody">
-
-        <section id="containter">
-            <div class="lowerBound" >
-                <h4 id ="lb">Lower bounds</h4>
-                <div id="element-0">
-                    <label for="words"> Max</label>
-                    <input type="text" id="bounds-1" class="bounds" value="100.00">
-                  </div>
-                  <div id="element-1">
-                    <label for="words"> A+</label>
-                    <input type="text" id="bounds-2" class="bounds" value="95.00">
-                  </div>
-                  <div id="element-2">
-                    <label for="words"> A</label>
-                    <input type="text" id="bounds-3" class="bounds" value="90.00">
-                  </div>
-                  <div id="element-3">
-                    <label for="words"> A-</label>
-                    <input type="text" id="bounds-4" class="bounds" value="85.00">
-                  </div>
-                  <div id="element-4">
-                    <label for="words"> B+</label>
-                    <input type="text" id="bounds-5" class="bounds" value="80.00">
-                  </div>
-                  <div id="element-5">
-                    <label for="words"> B</label>
-                    <input type="text" id="bounds-6" class="bounds" value="75.00">
-                  </div>
-                  <div id="element-6">
-                    <label for="words"> B-</label>
-                    <input type="text" id="bounds-7" class="bounds" value="70.00">
-                  </div>
-                  <div id="element-7">
-                    <label for="words"> C+</label>
-                    <input type="text" id="bounds-8" class="bounds" value="65.00">
-                  </div>
-                  <div id="element-8">
-                    <label for="words"> C</label>
-                    <input type="text" id="bounds-9" class="bounds" value="60.00">
-                  </div>
-                  <div id="element-9">
-                    <label for="words"> C-</label>
-                    <input type="text" id="bounds-10" class="bounds" value="55.00">
-                  </div>
-                  <div id="element-10">
-                    <label for="words"> D</label>
-                    <input type="text" id="bounds-11" class="bounds" value="50.00">
-                  </div>
-                  <div id="element-11">
-                    <label for="words"> F</label>
-                    <input type="text" id="bounds-12" class="bounds" value="0.00">
+        <div class ="biggerContainer">
+          <h2 id="titleWords">Histogram Generator</h2>
+          <section class="containter">
+            
+              <div class="lowerBound" >
+                  <h4 id ="lb">Lower bounds</h4>
+                  <div id="element-0">
+                      <label for="words"> Max</label>
+                      <input type="text" id="bounds-1" class="bounds" value="100.00">
+                    </div>
+                    <div id="element-1">
+                      <label for="words"> A+</label>
+                      <input type="text" id="bounds-2" class="bounds" value="95.00">
+                    </div>
+                    <div id="element-2">
+                      <label for="words"> A</label>
+                      <input type="text" id="bounds-3" class="bounds" value="90.00">
+                    </div>
+                    <div id="element-3">
+                      <label for="words"> A-</label>
+                      <input type="text" id="bounds-4" class="bounds" value="85.00">
+                    </div>
+                    <div id="element-4">
+                      <label for="words"> B+</label>
+                      <input type="text" id="bounds-5" class="bounds" value="80.00">
+                    </div>
+                    <div id="element-5">
+                      <label for="words"> B</label>
+                      <input type="text" id="bounds-6" class="bounds" value="75.00">
+                    </div>
+                    <div id="element-6">
+                      <label for="words"> B-</label>
+                      <input type="text" id="bounds-7" class="bounds" value="70.00">
+                    </div>
+                    <div id="element-7">
+                      <label for="words"> C+</label>
+                      <input type="text" id="bounds-8" class="bounds" value="65.00">
+                    </div>
+                    <div id="element-8">
+                      <label for="words"> C</label>
+                      <input type="text" id="bounds-9" class="bounds" value="60.00">
+                    </div>
+                    <div id="element-9">
+                      <label for="words"> C-</label>
+                      <input type="text" id="bounds-10" class="bounds" value="55.00">
+                    </div>
+                    <div id="element-10">
+                      <label for="words"> D</label>
+                      <input type="text" id="bounds-11" class="bounds" value="50.00">
+                    </div>
+                    <div id="element-11">
+                      <label for="words"> F</label>
+                      <input type="text" id="bounds-12" class="bounds" value="0.00">
+                    </div>
+                       
+              </div>
+              <div class ="leftSide">
+                  <div id = "lb2">
+                    <h4 id ="lb">Histogram</h4>
+                    <canvas id="charts" > </canvas>
                   </div>
                   
-                
-            </div>
-            <div class ="leftSide">
-                <div class="charts">
-
-                    <div id="space">
-                        <h4 id ="lb">Histogram</h4>
-                        <div id="his-1" class="chart-row">
-                            <label for="words"> A+</label>
-                            <div class="bar bar-1" ></div>
-                        </div>
-                        <div id="his-2" class="chart-row">
-                            <label for="words"> A</label>
-                            <div class="bar bar-2"></div>
-                        </div>
-                        <div id="his-3" class="chart-row">
-                            <label for="words"> A-</label>
-                            <div class="bar bar-3"></div>
-                        </div>
-                        <div id="his-4" class="chart-row">
-                            <label for="words"> B+</label>
-                            <div class="bar bar-4"></div>
-                        </div>
-                        <div id="his-5">
-                            <label for="words"> B</label>
-                            <div class="bar bar-5"></div>
-                        </div>
-                        <div id="his-6">
-                            <label for="words"> B-</label>
-                            <div class="bar bar-6"></div>
-                        </div>
-                        <div id="his-7">
-                            <label for="words"> C+</label>
-                            <div class="bar bar-7"></div>
-                        </div>
-                        <div id="his-8">
-                            <label for="words"> C</label>
-                            <div class="bar bar-8"></div>
-                        </div>
-                        <div id="his-9">
-                            <label for="words"> C-</label>
-                            <div class="bar bar-9"></div>
-                        </div>
-                        <div id="his-10">
-                            <label for="words"> D</label>
-                            <div class="bar bar-10"></div>
-                        </div>
-                        <div id="his-11">
-                            <label for="words"> F</label>
-                            <div class="bar bar-11"></div>
-                        </div>
-
-                    </div>
-                    
-                </div>
-                
-
-                <div id="subcon">
-                    <div class="newGrade">
-                        <label for="words" id="lb"> New Grade:</label>
-                        <input type="text" id="newGradeBox" ">
-                    </div>
-                    <label for="words" id="errorMessage"> </label>
-
-                </div>
-
-
-            </div>
-        </section>
+                  <div id="subcon">
+                      <div class="newGrade">
+                          <label for="words" > New Grade:</label>
+                          <input type="text" id="newGradeBox" ">
+                      </div>
+                      <label for="words" id="errorMessage"> </label>
+  
+                  </div>
+              </div>
+          </section>
+        </div>
+        
         <script src="calculate.js"></script>
     </body>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </html>
 
 
